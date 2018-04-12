@@ -1,0 +1,9 @@
+app-success-alert {
+  background-color: green;
+  display: block;
+}
+
+app-warning-alert {
+  background-color: orange;
+  display: block;
+}
