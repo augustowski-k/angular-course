@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ServersComponent implements OnInit {
   allowNewServer = false;
   newServerName = '';
+  servers = ['Test server', 'Development server', 'Production server'];
 
   constructor() {
     setTimeout(() => {
@@ -19,6 +20,6 @@ export class ServersComponent implements OnInit {
   }
 
   onCreateServer() {
-    document.querySelector('.content').innerHTML += '<div>New server with name: ' + this.newServerName + '</div>';
+    this.servers.push(this.newServerName);
   }
 }
