@@ -1,4 +1,4 @@
-export interface Ingredient {
-  name?: string;
-  quantity?: number;
+export class Ingredient {
+  constructor(public name: string, public amount: number) {}
+
 }
